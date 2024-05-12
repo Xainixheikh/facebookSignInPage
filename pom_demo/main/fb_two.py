@@ -22,6 +22,7 @@ def test_login_valid():
     login.enter_email("beingzainsheikh@gmail.com")
     login.enter_password("aaasss@22")
     login.click_login()
+    driver.save_screenshot("HomePage.png")
     actual_title = driver.title
     # element = driver.find_element(By.XPATH, "//div[@id='error_box']")  # wait.until()
     # is_element_present = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@id='error_box']")))
